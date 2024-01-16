@@ -4,9 +4,11 @@
 
 :root {
   --color-core: #0b58b4;
+  --color-categories: #1b58b6;
   --color-noactive: #6da2dd;
   --color-black: #000000;
   --weight: 500;
+  --ya-border: #fc0;
 }
 
 html {
@@ -44,4 +46,25 @@ div>div:nth-child(3n) h2 {
 
 }
 
-.news-title a {}
+/* Yandex is sercher */
+.ya-search .HeaderDesktopForm {
+  border: 3px solid var(--ya-border);
+  border-radius: 12px;
+  height: 44px;
+}
+
+.ya-categories h2 {
+  color: var(--color-categories);
+  cursor: pointer;
+}
+
+.yandex span:first-of-type {
+  color: var(--color-black);
+}
+
+/* footer */
+footer h2,
+footer div:nth-child(2n) h2,
+footer div:nth-child(3n) h2 {
+  color: var(--color-categories);
+}

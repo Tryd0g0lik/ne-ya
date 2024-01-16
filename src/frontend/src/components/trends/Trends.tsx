@@ -1,9 +1,8 @@
 import React from "react";
 import HeaderFC from "../headers/Header.tsx";
 import Ind from "../../getId.ts";
-interface Titles {
-  titles: string[]
-}
+import { Titles } from "../../interfaces/titles.ts";
+
 
 export default function TrendsFC({ titles }: Titles): React.JSX.Element {
   const ind = new Ind();

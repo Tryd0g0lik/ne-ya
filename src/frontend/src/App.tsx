@@ -4,6 +4,10 @@ import { trends } from "./data/trend.ts";
 import NewsFC from "./components/top-news/News.tsx";
 import { news } from "./data/topNews.ts";
 import { corse } from "./data/courses.ts";
+import { categories } from "./data/categoties.ts";
+import FormFC from "./components/sercher/Search.tsx";
+import BlockFC from "./components/blocks/Blocks.tsx";
+import { footer } from "./data/footerBlock.ts";
 
 export default function AppFC(): React.JSX.Element {
   return (
@@ -16,9 +20,19 @@ export default function AppFC(): React.JSX.Element {
         <NewsFC arr={corse} />
       </div>
       <div className="yandex">
-        <div className="ya-categories"></div>
-        <div className="ya-search"></div>
+        <div className="ya-categories">
+          <TrendsFC titles={categories} />
+        </div>
+        <div className="ya-search">
+          <div className="HeaderDesktopForm">
+            <FormFC />
+          </div>
+          <span>Найдётся всё. Например,</span><span>Фаза луны сегодня</span>
+        </div>
       </div>
+      <footer className="pt-4">
+        <BlockFC arr={footer} />
+      </footer>
     </div>
   );
 }

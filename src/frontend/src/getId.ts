@@ -1,5 +1,12 @@
 import { v4 as uuidv4 } from "uuid";
 
+
+/**
+ * class Ind this's  indentificater.
+ * First writes a content line  'const ind = new Ind()'.
+ * Last has be writes 'ind.indAdd()'.
+ * @returns Ind unique.
+ */
 export default class Ind {
   keys: string;
   set: any;

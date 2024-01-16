@@ -1,9 +1,5 @@
 import React from "react";
-interface News {
-  icon: string
-  title: string
-  ref: string
-}
+import { News } from "../../interfaces/news";
 
 export default function NewFC({ icon, title, ref }: News): React.JSX.Element {
 
