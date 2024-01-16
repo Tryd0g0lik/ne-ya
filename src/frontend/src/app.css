@@ -32,3 +32,16 @@ div>div:nth-child(3n) h2 {
 .top-news .news-title a {
   color: var(--color-black);
 }
+.top-course ul li {
+  display: inline-flex;
+  justify-content: flex-start;
+
+}
+
+.top-course ul li:last-of-type div:first-of-type {
+  background: no-repeat url("./data/course.svg");
+  background-position: 0 2px;
+
+}
+
+.news-title a {}
