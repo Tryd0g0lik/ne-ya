@@ -9,6 +9,14 @@ import FormFC from "./components/sercher/Search.tsx";
 import BlockFC from "./components/blocks/Blocks.tsx";
 import { footer } from "./data/footerBlock.ts";
 
+
+/**
+ * importing:  `React`, `TrendsFC`, `{ trends }`, `NewsFC`, `{ news }`
+ * importing: `{ corse }`, `{ categories }`, `FormFC`, `BlockFC`, `{footer}`
+ *
+ *  Поисковик - лидер Российского рынка
+ * @returns React.JSX.Element 
+ */
 export default function AppFC(): React.JSX.Element {
   return (
     <div className="pt-6 ">
