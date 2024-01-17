@@ -8,8 +8,9 @@ archive/
 .github/
 src/index.ts
 .eslintrc.cjs
-node_modules/
-
+ /node_modules
+**/node_modules
+./styleguide
 archive
 .cache
 

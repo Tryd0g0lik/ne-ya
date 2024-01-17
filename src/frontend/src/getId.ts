@@ -1,5 +1,4 @@
-import { v4 as uuidv4 } from "uuid";
-
+import uuidv4 from "uuid";
 
 /**
  * class Ind this's  indentificater.
@@ -15,7 +14,7 @@ export default class Ind {
   }
 
   private indGenerate(): string {
-    const key: string = uuidv4();
+    const key: string = uuidv4.v4();
     return key;
   }
 

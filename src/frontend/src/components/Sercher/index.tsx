@@ -9,7 +9,6 @@ export default function FormFC(): React.JSX.Element {
 
         </label>
       </form>
-
     </>
-  )
+  );
 }

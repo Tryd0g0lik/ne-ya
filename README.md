@@ -1,15 +1,7 @@
 
-[![Build status](https://ci.appveyor.com/api/projects/status/sx8goitjw5yfswpu/branch/master?svg=true)](https://ci.appveyor.com/project/Tryd0g0lik/cards/branch/master)
+Вы работаете в стартапе, который решил тягаться с самим Яндексом в части предоставления контента. Это, конечно же, шутка, но задача нешуточная.
 
-Вам необходимо реализовать компонент карточек, позволяющий использовать себя следующим образом:
-
-![Card](https://github.com/netology-code/ra16-homeworks/blob/master/composition/cards/assets/card1.png?raw=true)
-
-![card2](https://github.com/netology-code/ra16-homeworks/blob/master/composition/cards/assets/card2.png?raw=true)
-
-В качестве CSS вы можете использовать Bootstrap, а подглядеть генерируемую разметку можете на странице.
-
-Подсказка: используйте для этого props.children и props для отображения картинки.
+Вам принесли дизайн-макет, похожий на этот:
 
 ## Для запуска 
 `yarn server`

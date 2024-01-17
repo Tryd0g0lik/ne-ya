@@ -1,8 +1,7 @@
 import React from "react";
-import { News } from "../../interfaces/news";
+import { type News } from "../../interfaces/news.ts";
 
 export default function NewFC({ icon, title, ref }: News): React.JSX.Element {
-
   return (
     <>
       <div className="w-4 h-4 ">
@@ -13,7 +12,4 @@ export default function NewFC({ icon, title, ref }: News): React.JSX.Element {
         </a></div>
     </>
   );
-
-
 }
-

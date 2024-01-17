@@ -1,13 +1,13 @@
 import React from "react";
-import { Arr } from "../../interfaces/arr.ts";
-import { News } from "../../interfaces/news.ts";
-import HeaderFC from "../headers/Header.tsx";
+import { type Arr } from "../../interfaces/arr.ts";
+import { type News } from "../../interfaces/news.ts";
+import HeaderFC from "../Headers/index.tsx";
 import Ind from "../../getId.ts";
 
 /**
  * Подвал различных ссылок.
- * @param `arr`: [{title:"....."}] 
- * @returns 
+ * @param `arr`: [{title:"....."}]
+ * @returns
  */
 export default function BlockFC({ arr }: Arr): React.JSX.Element {
   const ind = new Ind();
@@ -21,5 +21,5 @@ export default function BlockFC({ arr }: Arr): React.JSX.Element {
         ))
       }</div>
     </>
-  )
+  );
 }

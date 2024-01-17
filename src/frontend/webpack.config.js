@@ -11,7 +11,6 @@ module.exports = {
 
   },
 
-  target: 'web',
 
   module: {
     rules: [
@@ -25,8 +24,6 @@ module.exports = {
               configFile: path.resolve(__dirname, './babel.config.js'),
             }
           },
-
-
         ],
 
         exclude: [

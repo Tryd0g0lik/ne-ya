@@ -18,9 +18,12 @@
     "build:dev": "webpack --mode=development --config ./webpack.config.js",
     "build": "webpack --mode=production --config ./webpack.config.js",
     "server": "webpack server --mode=development",
-    "dev:tailwindcss": "npx tailwindcss -i ./src/frontend/src/app.css -o ./src/frontend/src/output.css --watchy"
+    "dev:tailwindcss": "npx tailwindcss -i ./src/frontend/src/app.css -o ./src/frontend/src/output.css --watchy",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build"
   },
   "devDependencies": {
+    "uuid": "^9.0.1",
     "@stylistic/eslint-plugin": "^1.5.1",
     "@stylistic/eslint-plugin-js": "^1.5.1",
     "@stylistic/eslint-plugin-jsx": "^1.5.3",
