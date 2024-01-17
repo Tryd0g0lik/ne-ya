@@ -4,6 +4,11 @@ import Ind from "../../getId.ts";
 import { type News } from "../../interfaces/news.ts";
 import { type Arr } from "../../interfaces/arr.ts";
 
+/**
+ *
+ * @param arr: Array. It's Headers
+ * @returns React.JSX.Element "<li>.....</li>"
+ */
 export default function NewsFC({ arr }: Arr): React.JSX.Element {
   const ind = new Ind();
   return (

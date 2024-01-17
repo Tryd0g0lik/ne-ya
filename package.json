@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "copy-webpack-plugin": "^12.0.1",
     "package.json": "^2.0.1",
     "web-vitals": "^2.1.0"
   },
@@ -19,11 +20,10 @@
     "build": "webpack --mode=production --config ./webpack.config.js",
     "server": "webpack server --mode=development",
     "dev:tailwindcss": "npx tailwindcss -i ./src/frontend/src/app.css -o ./src/frontend/src/output.css --watchy",
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build"
+    "styleguide": "yarn workspace decomposition-frontend styleguide",
+    "styleguide:build": "styleguidist build --mode=development --config ./styleguide.config.js"
   },
   "devDependencies": {
-    "uuid": "^9.0.1",
     "@stylistic/eslint-plugin": "^1.5.1",
     "@stylistic/eslint-plugin-js": "^1.5.1",
     "@stylistic/eslint-plugin-jsx": "^1.5.3",

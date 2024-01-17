@@ -1,5 +1,9 @@
 import React from "react";
 
+/**
+ *
+ * @returns React.JSX.Element It's form contains a input field.
+ */
 export default function FormFC(): React.JSX.Element {
   return (
     <>

@@ -1,9 +1,9 @@
 const { version } = require("./package.json");
 const { name } = require("./src/frontend/package.json");
 const { merge } = require("webpack-merge");
-const path = require("path");
+
 const commonChild = require("./src/frontend/webpack.config.js");
-const common = require("./webpack.config.js");
+
 
 module.exports = {
   pagePerSection: process.env.NODE_ENV !== "production",

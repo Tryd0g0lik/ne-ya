@@ -28,7 +28,9 @@
     "node_modules",
     "directory",
     "archive",
-    "**/result"
+    "**/result",
+    "estree",
+    "**/estree"
   ],
   "files": [
     "src/index.ts",

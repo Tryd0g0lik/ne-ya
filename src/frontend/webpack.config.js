@@ -52,4 +52,25 @@ module.exports = {
   plugins: [
 
   ],
+  watchOptions: {
+    ignored: [
+      "node_modules",
+      "**/node_modules"
+    ]
+  },
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, '../../dist'),
+
+    },
+
+    watchFiles: [
+      './src/frontend/src'
+    ],
+
+    compress: true,
+    historyApiFallback: true,
+    open: true,
+    // port: 8080
+  }
 };
