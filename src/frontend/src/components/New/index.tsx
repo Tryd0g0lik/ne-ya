@@ -1,6 +1,13 @@
 import React from "react";
 import { type News } from "../../interfaces/news.ts";
 
+/**
+ *
+ * @params `icon?` : string,
+ * @params `title` : string,
+ * @params `ref?` : string
+ * @returns  React.JSX.Element
+ */
 export default function NewFC({ icon, title, ref }: News): React.JSX.Element {
   return (
     <>
